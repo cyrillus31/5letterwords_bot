@@ -11,12 +11,11 @@ author: @IdoubledareU31
 import telebot
 import re
 
-with open ("/home/kyrillos/PythonProjects/5letterwords_bot/token.txt", "r") as f:
-    token = str(f.read())
-    f.close()
-print (token)
-bot = telebot.TeleBot(token.strip())
-print ("test1")
+# with open ("/home/kyrillos/PythonProjects/5letterwords_bot/token.txt", "r") as f:
+#     token = f.read()
+
+bot = telebot.TeleBot("5768473467:AAETGyFEhhswzem4k8AwnURmO6AnW_HshK4")
+
 theword = ""
 theletters = ""
 letters_list = []
@@ -189,7 +188,7 @@ def return_the_loop(message):
         bot.send_message(message.chat.id,
                          "Архив почищен!")
         bot.send_message(message.chat.id,
-                         "Молодец! Ты отгадала слово, ЛЮБИМЫЙ МАЛЫШИК!! Теперь ты можешь начать искать новое слово, если напишешь его ниже.\Если забыла с чего начинать, то используй команду /start")
+                         "Шаг 1 из 3: \nВведите слово заменяя неизвестные буквы знаком '+' Например: в+л+а")
 
 
 
