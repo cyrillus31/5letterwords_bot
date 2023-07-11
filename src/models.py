@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, Column, Integer, String
 
-import database
+from src import database
 
 
 class Word(database.Base):

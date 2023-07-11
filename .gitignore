@@ -1,3 +1,5 @@
 **/__*__
 **/venv
 **/.env
+**/*cache*
+**/.vscode
