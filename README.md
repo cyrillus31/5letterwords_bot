@@ -14,7 +14,7 @@
 
 ### Примеры:  
 > #### Запрос
-> _Хочу найти слово в котором вторая буква - О, а пследние две - КА. Известно, что в слове точно должны быть буквы К и Ж, и точно не должно быть букв ГМ:_
+> _Хочу найти слово в котором вторая буква - О, а пследние две - КА. Известно, что в слове точно должны быть буквы К и Ж, и точно не должно быть букв Г и М:_
 > ```
 > _о$ка, кж, гм  
 > ```
@@ -55,7 +55,7 @@
 ### Стэк  
 |**TECHNOLOGY**|**NAME**|
 |----|-----|
-|Telegram framwork|[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)|
+|Telegram framework|[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)|
 |ORM|SQLAlchemy|
 |Database|SQLite    |
 |Tests|pytest    |
