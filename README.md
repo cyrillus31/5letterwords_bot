@@ -14,6 +14,7 @@
 
 ### Примеры:  
 > #### Запрос
+> _Хочу найти слово в котором вторая буква - О, а пследние две - КА. Известно, что в слове точно должны быть буквы К и Ж, и точно не должно быть букв ГМ:_
 > ```
 > _о$ка, кж, гм  
 > ```
@@ -24,6 +25,7 @@
 > ```
 
 > #### Запрос
+> _Хочу найти слово в котором две последние буквы - ОК, и известно, что в этом слове нет буквы Б, Ы и Ч:_
 > ```
 > 888ок,,быч  
 > ```
@@ -51,16 +53,19 @@
 **/status** - чтобы посмотреть по каким параметрам ведется поиск
 
 ### Стэк  
-|[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)|
-|----------|
-|SQLAlchemy|
-|SQLite    |
-|pytest    |
+|**TECHNOLOGY**|**NAME**|
+|----|-----|
+|Telegram framwork|[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)|
+|ORM|SQLAlchemy|
+|Database|SQLite    |
+|Tests|pytest    |
 
-
-## SYSTEMD service config file example
+## Деплой
+### SYSTEMD service config file пример 
 Запусти следующую команду, чтобы создать сервисный файл systemd:  
-`cd /etc/systemd/system; sudo vi yt_notifier_bot.service`
+```
+cd /etc/systemd/system; sudo vi 5lw_bot.service
+```
 
 Заполни открывшийся файл по образцу:
 ```
@@ -89,4 +94,6 @@ WantedBy=multi-user.target
 ```
 
 ### Запускаем systemd service
-`sudo systemctl daemon-reload; sudo systemctl start yt_notifier_bot`
+```
+sudo systemctl daemon-reload; sudo systemctl start 5lw_bot.service
+```
