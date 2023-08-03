@@ -13,13 +13,13 @@ def is_valid_string(message: str) -> bool:
     if len(message) != 5:
         return False
     
-    valid_symbols = 0
-    for symbol in message:
-        if is_letter(symbol):
-            valid_symbols += 1
-    if valid_symbols > 0:
-        return True
-    return False
+#     valid_symbols = 0
+#     for symbol in message:
+#         if is_letter(symbol):
+#             valid_symbols += 1
+#     if valid_symbols > 0:
+#         return True
+    return True 
 
 
 def add_wildcards(message: str) -> str:
